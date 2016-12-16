@@ -9,7 +9,7 @@ data Disc = Disc
 
 positions :: [Disc] -> [[Int]]
 positions = map positions'
-  where positions' disc = map (\i -> (initial disc + i) `mod` size disc) [0..]
+  where positions' (Disc i s) = cycle $ map (\n -> (i + n) `mod` s) [0..s-1]
 
 discs :: [Disc]
 discs =
