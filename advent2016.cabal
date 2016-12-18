@@ -57,3 +57,11 @@ executable day17
                      , range
   default-language:    Haskell2010
   default-extensions:  RecordWildCards
+
+executable day18
+  main-is:             Day18.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N -O2 -Wall
+  build-depends:       base >= 4.7 && < 5
+  default-language:    Haskell2010
+  default-extensions:  TemplateHaskell
+                     , DeriveDataTypeable
