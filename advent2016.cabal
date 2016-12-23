@@ -21,6 +21,12 @@ executable day07
   default-language:    Haskell2010
   default-extensions:  TemplateHaskell
 
+executable day12
+  main-is:             Day12.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N -O2 -Wall
+  build-depends:       base >= 4.7 && < 5
+  default-language:    Haskell2010
+
 executable day14
   main-is:             Day14.hs
   ghc-options:         -threaded -rtsopts -with-rtsopts=-N -O2 -Wall
